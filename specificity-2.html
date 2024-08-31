@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Specificity - 2 (How to calculate specificity)</title>
+ 
+  <style>
+  /* inline style attribute > Id selector > class selector > element selector */
+    div#container ul.my-songs li {
+      color: darkgreen;
+      background-color: mediumaquamarine;
+    } 
+    /* How to calculate specificity */
+    /* _, _, _, _, (fill all 4type of property in this format respectively to [inline style attribute, Id selector, class selector, element selector] )*/
+    /* lets fill this:
+       0,(because there is no style attribute) 1,(#container) 1,(.my-songs) 3(div, ul, li) 
+      final ans.(specificity) =>(0,1,1,3) ---> 113
+     */
+     
+    .favourite {
+      color: black;
+      background-color: white;
+    }
+    /* Calculating specificity of this : (0,0,1,0) ---> 10
+    */
+    /* So this properties will not apply because the specificity of upper properties is more than this */
+    
+    div#container ul.my-songs li.favourite {
+      color: darkmagenta;
+      background-color: lightsalmon;
+    }
+    /* Now this property will work because we increase the specificity.
+    Lets calculate:
+    (0,1,2,3) ---> 123
+    Therefore, now this specificity will work because 123 > 113
+    */
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <ul class="my-songs">
+      <li>Unstopable</li>
+      <li>Wuschan clan</li>
+      <li class="favourite">Love me like you do</li>
+      <li>Sorry</li>
+      <li>We don't talk anymore</li>
+    </ul>
+  </div>
+
+</body>
+</html>

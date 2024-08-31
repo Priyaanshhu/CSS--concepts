@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Margin Collapsing</title>
+  <style>
+    .box1, .box2 {
+      border: 2px solid #444;
+      padding: 10px;
+    }
+    
+    /* Margin collapsing is when the margin between margin-bottom and margin-top will not apply in addition form, it only consider the bigger value between this two margin's input */
+    .box1 {
+      margin-bottom: 40px;
+    }
+    
+    .box2 {
+      margin-top: 50px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <h1>This is box 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus, eaque error inventore, excepturi temporibus voluptate ipsam sint modi rerum dignissimos, id officia blanditiis repellendus architecto cupiditate fugiat enim, facere itaque labore iusto! Consectetur sit velit non, exercitationem suscipit nemo veritatis praesentium illum ullam, est reprehenderit eveniet dolorum debitis mollitia, rem pariatur? Reprehenderit nam temporibus placeat totam quidem omnis quod, deserunt minima ut! Aperiam officiis omnis asperiores officia repellendus dicta? Voluptate explicabo facilis esse delectus, corrupti quisquam quis. Quisquam suscipit vitae blanditiis quam quis ratione sit atque. Asperiores neque ex ad doloremque quidem numquam, incidunt temporibus sint obcaecati, necessitatibus optio!</p>
+  </div>
+  
+  <div class="box2">
+    <h1>This is box 2</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam distinctio nulla quam debitis, asperiores, nemo temporibus nobis porro nihil? Maiores illo, sunt corporis dignissimos odit esse blanditiis possimus sint non, eos, nemo ipsa repudiandae autem, consectetur aliquam atque! Esse, placeat! Nesciunt consequatur quibusdam incidunt, quasi pariatur unde aliquam. Consectetur optio ratione quas temporibus vero commodi qui quaerat culpa nobis assumenda harum sed consequuntur enim earum, quo fugiat similique non deleniti adipisci perferendis eum iusto ad tempora praesentium alias. Cumque molestias cum odit quo minima consequatur quibusdam incidunt in itaque excepturi harum labore error natus, ipsum, inventore consectetur vitae similique!</p>
+  </div>
+
+</body>
+</html>

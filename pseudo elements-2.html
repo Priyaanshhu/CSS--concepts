@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pseudo elements - before and after</title>
+  <style>
+  /* Note: You can't use before and after pseudo element with image, br, input (replace elements) */
+  
+    .cool::before {
+      /* content is mandatory in before and after it's like a element */
+      content: 'Hello ';
+      display: block;
+      border: 2px solid darkcyan;
+      color: green;
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+    
+    .cool::after {
+      content: 'Again hello ';
+      display: block;
+      border: 2px solid darkcyan;
+      color: green;
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <p class="cool">This is my paragraph</p>
+  <h1 class="main-heading">This is my heading</h1>
+
+</body>
+</html>

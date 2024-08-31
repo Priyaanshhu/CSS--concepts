@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Border</title>
+  <style>
+    div {
+      border-width: 8px;
+      border-style: solid;
+      border-color: darkcyan;
+    }
+  
+    h2 {
+      /* This is shorthand
+      border: (width, style, color) */
+      border: 5px solid rebeccapurple; 
+    }
+    
+    img {
+      border-left: 10px solid lightseagreen;
+      border-right: 10px solid lightseagreen;
+      
+      /* Border-radius will taget curve of 4sides, This is shorthand property you can also target curves independently */
+      border-radius: 50px;
+    }
+    
+    p {
+      border-bottom: 5px solid red;
+      border-top: 1px dotted darkblue;
+    }
+    
+    span {
+      border: 2px solid black;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Nav -->
+  <div class="header">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </div>
+  
+  <!-- Heading -->
+  <h2>Main heading</h2>
+  
+  <!-- Image -->
+  <img src="/Assets /green-hill.jpeg" alt="green-hills">
+  
+  <!-- Paragraph -->
+  <p>This <span>is</span> a paragraph</p>
+
+</body>
+</html>

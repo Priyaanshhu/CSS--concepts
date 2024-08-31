@@ -1,0 +1,5 @@
+/* In "External Css" we write code in other file and link that file in our html */
+
+h3 {
+  background-color: peru;
+}

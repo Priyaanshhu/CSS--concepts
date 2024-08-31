@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>More Selectors</title>
+  <style>
+  /* universal selector*/
+  * {
+    color: black;
+  }
+  
+  /* Element Selector */
+    header {
+      background-color: #f0ebeb;
+    }
+    
+    /* For selecting a element with a class */
+    section.my-article {
+      background-color: #f2e9e9;
+    }
+    
+    /* Selecting only the p element inside a header "Decendant Selector" */
+    header p {
+      color: darkred;
+    }
+    
+    li a {
+      color: darkgreen;
+    }
+     /* This will target all h2 element in section.my-article  */
+    section.my-article h2 {
+      color: darkblue;
+    }
+    
+    /* Direct Child */
+    section.my-article > h2 {
+      color: coral;
+    }
+    
+    /* adjacent selector (This will target the element which come just after h2 (p)) */
+    h2+p {
+      color: purple;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>Short paragraph inside header</p>
+    <h1 class="main-logo">Main logo</h1>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <p>Short paragraph inside header</p>
+  </header>
+  <main>
+    <h2>Main content of our Web page</h2>
+    <section class="my-article">
+      <h2>Article Section</h2>
+      <article>
+        <h2>Article heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, commodi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, commodi.</p>
+      </article>
+      <article>
+        <h2>Article heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, accusamus.</p>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>

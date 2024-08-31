@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pseudo class - Input field </title>
+  <style>
+  /* When you want to show the properties on click which are given in input for that "focus" is used */
+    input:focus {
+      padding: 10px;
+      outline: none;
+      border: 2px solid green;
+    }
+    
+    input:required {
+      color: darkred;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <form>
+  <label for="name">Name </label>
+  <input type="text" id="name" placeholder="Enter your Name"  required><br><br>
+  
+  <label for="gmail">Gmail </label>
+  <input type="gmail" id="gmail" placeholder="Enter you Email"><br><br>
+  <input type="submit" value="Submit">
+    
+  </form>
+
+</body>
+</html>

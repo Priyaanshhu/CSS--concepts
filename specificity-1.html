@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Specificity - 1</title>
+  <style>
+  /* Note: Always write codes by taken care of specificity and using "!important" is not a good practice so avoid it */
+  
+  /* The specificity of class is more than a element */
+    h1 {
+      color: seagreen;
+    }
+    
+    /* '!important' will automatically increase specificity of any selector */
+    .heading {
+      color: darkred !important;
+    }
+    
+    /* the specificity of id is more than a class */
+    #head {
+      color: darkcyan;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Specificity of style attribute is more than a id or class -->
+  <h1 class="heading" id="head" style="color: orange">I am a heading</h1>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inline, Block Level Elements</title>
+  <style>
+    body {
+      color: #444;
+    }
+    
+    h1, h2 {
+      border: 2px solid black;
+    }
+    
+    h2 {
+      /* We can manipulate inline/block elements by using "display" property */
+      display: inline;
+    }
+    
+    a {
+      border: 2px solid darkslategray;
+      
+      /* This height and width didn't work in inline Elements */
+      height: 100px;
+      width: 100px;
+      
+      /* In Inline elements "margin-top" and "margin-bottom" didn't work */
+      margin-top: 100px;
+      margin-bottom: 100px;
+      
+      /* Only "margin-left" and "margin-right" will work */
+      margin-left: 50px;
+      margin-right: 50px;
+      
+      /* Don't use "padding-top" and "padding-bottom" in inline elements it will messup the content */
+      padding-top: 10px;
+      padding-bottom: 10px;
+      
+      /* Use only "padding-left" and "padding-right" if required */
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Block level Elements - This elements cover the whole width of browser -->
+  <h1>This is heading one</h1>
+  <h2>This is heading two</h2>
+  
+   <!-- Inline level Elements - This elements only cover the width they required -->
+   <a href="#">Link 1</a>
+   <a href="#">Link 2</a>
+ 
+  
+  
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Box Model</title>
+  <style>
+    h1 {
+      /* Border is area between margin and padding */
+      border: 20px solid black;
+      
+      /* Padding is the area between content and border */
+      padding-top: 50px;
+      padding-right: 40px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      
+      /* Margin is outside area of border */
+      margin-top: 60px;
+      margin-right: 50px;
+      margin-bottom: 40px;
+      margin-left: 30px;
+    }
+    
+    h2 {
+      border: 20px solid darkblue;
+      
+      /* Shorthand of padding [ padding: top&bottom left&right ]*/
+      padding: 50px 10px;
+      
+      /* Shorthand of margin [ margin: top&bottom left&right ]*/
+      margin: 60px 20px;
+    }
+    
+    h3 {
+      border: 20px solid darkmagenta;
+      
+      /* Shorthand of padding [ padding: top left bottom right (clockwise)]*/
+      padding: 40px 60px 50px 20px ;
+      
+      /* Shorthand of margin [ margin: top left bottom right (clockwise)]*/
+      margin: 50px 70px 60px 30px;
+    }
+    
+    h4 {
+      border: 10px solid blueviolet;
+      padding: 20px 50px;
+      
+      /* "auto" will automatically set same value on both side of same x or y axis.
+      Note: giving width or height is mandatory before using auto value.
+      */
+      width: 300px;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Heading1</h1>
+  <h2>Heading2</h2>
+  <h3>Heading3</h3>
+  <h4>Heading4</h4>
+
+</body>
+</html>

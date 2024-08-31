@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pseudo class - root, empty, and not</title>
+  <style>
+  /* This means give bluevoilet color to all elements under body except p */
+    body :not(p) {
+      color: blueviolet;
+    }
+    
+    /* This is used to style an empty element */
+    div:empty {
+      background-color: pink;
+      border: 2px solid black;
+      width: 100px;
+      height: 100px;
+    }
+    
+    /* html = root (But the specificity of root is more than html) */
+    :root {
+      background-color: lightslategray;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>heading 1</h1>
+  <div></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, nostrum.</p>
+  <div></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, corrupti?</p>
+
+</body>
+</html>

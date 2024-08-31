@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attribute Selector</title>
+  <style>
+    input[type = "text"] {
+      color: red;
+      background-color: wheat;
+    }
+
+    input[type = "password"] {
+      background-color: pink;
+    }
+    
+    /* This will Target all the link where 'google' word is present */
+    a[href *= "google"] {
+      color: darkslategray;
+    }
+    
+    a[href $= ".net"] {
+      color: red;
+    }
+    
+    input[type ^= 'p'] {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Links</h2>
+  <a href="http://www.google.com">Google</a><br>
+  <a href="http://www.google.in">Google 2</a><br>
+  <a href="http://www.instagram.com">Instagram</a><br>
+  <a href="http://www.mircrosoft.net">Microsoft</a><br>
+  
+  <h2>Form</h2>
+  <form>
+    <label for="fname">First Name :</label><br>
+    <input type="text" id="fname"><br>
+    <label for="lname">Last Name :</label><br>
+    <input type="text" id="lname"><br>
+    <label for="password">Password :</label><br>
+    <input type="password" id="password"><br>
+    <input type="button" value="submit">
+  </form>
+
+</body>
+</html>

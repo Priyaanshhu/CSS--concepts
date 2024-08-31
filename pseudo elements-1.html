@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pseudo elements - first-letter and selection</title>
+  <style>
+  /* Note: First letter element works with block level elements only */
+    p::first-letter {
+      font-size: 32px;
+    }
+    
+    /* selection works when you select the content */
+    p::selection {
+      background-color: darkcyan;
+      color: lightgrey;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>My heading</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, nostrum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, corrupti?</p>
+
+</body>
+</html>

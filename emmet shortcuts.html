@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmet(extension) - Some Shortcuts</title>
+  
+<!-- CSS Emmet shortcuts -->
+
+  <style>
+    /* m10, p10, m:a, mt10, mt:10 pb:10 */
+    element {
+      margin: 10px;
+      padding: 10px;
+      margin: auto;
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+    
+    /* bxz, bxsh, w, h:a, maw, mih, bxsh, bxsh:r */
+    element {
+      box-sizing: border-box;
+      box-shadow: inset hoff voff blur color;
+      width: ;
+      height: auto;
+      max-width: ;
+      min-height: ;
+      box-shadow: inset hoff voff blur color;
+      box-shadow: inset hoff voff blur spread rgb(0, 0, 0);
+    }
+    
+    /* f, fw, fz, ff, ta, td, th, to+, tt, tsh, lh, lts, wow */
+    element {
+      font: ;
+      font-weight: ;
+      font-size: ;
+      font-family: ;
+      text-align: left;
+      text-decoration: none;
+      text-height: ;
+      text-outline: 0 0 #000;
+      text-transform: uppercase;
+      text-shadow: hoff voff blur #000;
+      line-height: ;
+      letter-spacing: ;
+      word-wrap: ;
+    }
+    
+    /* bg, bg+, bgi, bgr, bgp, bgsz, c, c:r, op, tbl, bd, bd+, bdc, bds, br, */
+    element {
+      background: #000;
+      background: #fff url() 0 0 no-repeat;
+      background-image: url();
+      background-repeat: ;
+      background-position: 0 0;
+      background-size: ;
+      color: #000;
+      color: rgb(0, 0, 0);
+      opacity: ;
+      table-layout: ;
+      border: ;
+      border: 1px solid #000;
+      border-color: #000;
+      border-style: ;
+      border-right: ;
+    }
+    
+    /* lis, list, !, ai, anim, anim-, colm, fx, fxw, jc, trf, trf:r, trf:ry, trf:sc3, */
+    element {
+      list-style: ;
+      list-style-type: ;
+      !important
+      align-items: ;
+      animation: ;
+      animation: name duration timing-function delay iteration-count direction fill-mode;
+      columns: ;
+      flex: ;
+      font-weight: ;
+      justify-content: ;
+      transform: ;
+      transform: rotate(angle);
+      transform: rotateY(angle);
+      transform: scale3d(x, y, z);
+    }
+    
+  </style>
+</head>
+
+<!-- HTML Emmet shortcuts-->
+
+<body>
+  <!-- Note: 
+  Adding sibling = "+"
+  Adding child = ">"
+  Multiply = "*"
+  Grouping = "()"
+  text = "{}"
+  Custom attribute = "[]"
+  climb-up = "^"
+  item numbering = "$"
+  Id = "#"
+  Class = "."
+  lorem = "random paragraph"
+  -->
+
+  <!-- lorem10 -->
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, aperiam.
+  
+  <!-- lorem*3 -->
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+  
+  <!-- p*5 -->
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+
+  <!-- p{this is paragraph} -->
+  <p>this is paragraph</p>
+  
+  <!-- div+p -->
+  <div></div>
+  <p></p>
+ 
+  <!-- div+p>span -->
+  <div></div>
+  <p><span></span></p>
+ 
+  <!-- (main>div)+div>ul>li*5 -->
+  <main>
+    <div></div>
+  </main>
+  <div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <!-- div1+div2>p>span+em^a--> 
+  <div1></div1>
+  <div2>
+    <p><span></span><em></em></p>
+    <a href=""></a>
+  </div2>
+
+  <!-- ol>li -->
+  <ol>
+    <li></li>
+  </ol>
+  
+  <!-- ol>li{Items}*5 -->
+  <ol>
+    <li>Items</li>
+    <li>Items</li>
+    <li>Items</li>
+    <li>Items</li>
+    <li>Items</li>
+  </ol>
+
+  <!-- ul>li{List item number $}*5-->
+  <ul>
+    <li>List item number 1</li>
+    <li>List item number 2</li>
+    <li>List item number 3</li>
+    <li>List item number 4</li>
+    <li>List item number 5</li>
+  </ul>
+  
+  <!-- #for-id -->
+  <div id="for-id"></div>
+
+  <!-- .for-class -->
+  <div class="for-class"></div>
+
+  <!-- button[type=submit] -->
+  <button type="submit"></button>
+
+  <!-- link -->
+  <link rel="stylesheet" href="">
+  
+  <!-- script:src -->  
+  <script src=""></script>
+
+</body>
+</html>

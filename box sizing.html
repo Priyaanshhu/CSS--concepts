@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Box Sizing: border-box </title>
+  <style>
+    hr {
+      border: 1px dotted black;
+      width: 700px;
+      margin-left: 0px;
+    }
+    
+    .box1 {
+      /* "box-sizing: border-box;" will add value of margin,border or padding in the given width (500px) otherwise after adding margin, padding or border will take extra space */
+      box-sizing: border-box;
+      background-color: #A0A5DA;
+      border: 5px solid black;
+      width: 500px;
+      padding: 50px;
+      margin-bottom: 50px;
+    }
+
+    .box2 {
+      background-color: #A0A5DA;
+      border: 5px solid black;
+      width: 500px;
+      padding: 50px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <hr>
+  
+  <div class="box1">
+    <h1>Heading1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, impedit neque! Necessitatibus, architecto qui. Ab magnam neque, porro numquam impedit doloremque fuga earum, quia mollitia voluptates harum cumque iure quo nemo, eveniet illum amet quidem enim ex dolores alias, adipisci veniam fugit facere sunt. Quo sint obcaecati, tenetur doloremque ipsum.</p>
+  </div>
+  
+  <div class="box2">
+    <h1>Heading2</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, impedit neque! Necessitatibus, architecto qui. Ab magnam neque, porro numquam impedit doloremque fuga earum, quia mollitia voluptates harum cumque iure quo nemo, eveniet illum amet quidem enim ex dolores alias, adipisci veniam fugit facere sunt. Quo sint obcaecati, tenetur doloremque ipsum.</p>
+  </div>
+
+</body>
+</html>
