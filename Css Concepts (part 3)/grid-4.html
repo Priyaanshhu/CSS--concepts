@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid-4</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1440px;
+      border: 1px solid #000;
+      margin: 100px 20px;
+      display: grid;
+      grid-auto-rows: 100px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      
+      /* "dense" will fill the empty spaces with other items */
+      grid-auto-flow: dense;
+    }
+
+    .item {
+      background: lightcoral;
+      color: #fff;
+      padding: 10px;
+      border: 2px solid #000;
+    }
+    
+    .items1 {
+      grid-column: 1/-1;
+    }
+    
+    .items8 {
+      grid-column: 1/-1;
+    }
+    
+  </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="item items1">Item 1</div>
+      <div class="item items2">Item 2</div>
+      <div class="item items3">Item 3</div>
+      <div class="item items4">Item 4</div>
+      <div class="item items5">Item 5</div>
+      <div class="item items6">Item 6</div>
+      <div class="item items7">Item 7</div>
+      <div class="item items8">Item 8</div>
+      <div class="item items9">Item 9</div>
+      <div class="item items10">Item 10</div>
+      <div class="item items11">Item 11</div>
+      <div class="item items12">Item 12</div>
+    </div>
+
+</body>
+</html>

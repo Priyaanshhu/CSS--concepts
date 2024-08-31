@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox-7 (flex-flow)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 3px solid #000;
+      display: flex;
+      height: 400px;
+      
+      /* 
+      "flexflow" is a shorthand property of:
+      (flex-flow: flex-direction flex-wrap;)
+      */
+      flex-flow: column wrap;
+    }
+
+    .box {
+      border: 1px solid #000;
+      width: 300px;
+    }
+
+    .box1 {
+      background-color: lightpink;
+    }
+
+    .box2 {
+      background-color: lightsteelblue;
+    }
+
+    .box3 {
+      background-color: lightseagreen;
+    }
+
+    .box4 {
+      background-color: lightskyblue;
+    }
+
+    .box5 {
+      background-color: lightslategrey;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box box1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+    <div class="box box2">
+      <h1>Box 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+    <div class="box box3">
+      <h1>Box 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+    <div class="box box4">
+      <h1>Box 4</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+    <div class="box box5">
+      <h1>Box 5</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

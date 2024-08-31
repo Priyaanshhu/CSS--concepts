@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox-2 (flex-direction)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 4px solid black;
+      margin-bottom: 50px;
+      display: flex;
+      
+      /* The flex-direction property specifies the direction of the flexible items. */
+      /* Note: If the element is not a flexible item, the flex-direction property has no effect. */
+      
+      /* "row-reverse" will reverse the align items in row */
+      flex-direction: row-reverse;
+    }
+
+    .box1 {
+      background-color: lightblue;
+    }
+
+    .box2 {
+      background-color: lightgray;
+    }
+
+    .box3 {
+      background-color: lightpink;
+    }
+
+    .box4 {
+      background-color: lightsalmon;
+    }
+
+    .container2 {
+      border: 4px solid black;
+      display: flex;
+      
+      /* "column-reverse" will reverse the align items in column */
+      flex-direction: column-reverse;
+    }
+
+    .box5 {
+      background-color: lightblue;
+    }
+
+    .box6 {
+      background-color: lightgray;
+    }
+
+    .box7 {
+      background-color: lightpink;
+    }
+
+    .box8 {
+      background-color: lightsalmon;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+
+    <div class="box2">
+      <h1>Box 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+
+    <div class="box3">
+      <h1>Box 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+    <div class="box4">
+      <h1>Box 4</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="box5">
+      <h1>Box 5</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+
+    <div class="box6">
+      <h1>Box 6</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+
+    <div class="box7">
+      <h1>Box 7</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+    <div class="box8">
+      <h1>Box 8</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

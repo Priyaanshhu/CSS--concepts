@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid-1</title>
+  <style>
+    /* "grid" is very powerful two-dimensional layout system */
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* grid for container */
+    .container {
+      max-width: 1440px;
+      border: 1px solid #000;
+      margin: 100px 20px;
+      display: grid;
+      
+      /* grid-template-columns: column1-size column2-size column3-size */
+      /* "fraction unit(fr)" fraction unit is used in grid so there will be no extra space remain */
+      grid-template-columns: 1fr 1fr 1fr;
+      /* We can also write this property like.
+      grid-template-columns: repeat(3, 1fr); */
+      /* If i want to fix any column like 1st one so that the size of 1st one will remain same at any screen size so for that we'll write like.
+      grid-template-columns: 100px 1fr 1fr; */
+      
+      /* "column-gap" will give the gap between grid column */
+      column-gap: 50px;
+      row-gap: 10px;
+      /* We can also use shorthand property of row and column gap like. 
+      gap: 10px 50px; (gap: row-gap column-gap;) */
+      
+      /* grid-template-rows: column1-size column2-size */
+      grid-template-rows: 100px 100px;
+      
+      /* "grid-auto-rows" will give the size to the rows which are given by browser */
+      grid-auto-rows: 50px;
+      
+      /* "grid-auto-flow" will set the grid:column/row (by default it always row) */
+      grid-auto-flow: row;
+    }
+    
+    .item {
+      background: lightcoral;
+      color: #fff;
+      padding: 10px;
+      border: 2px solid #000;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item items1">Item 1</div>
+    <div class="item items2">Item 2</div>
+    <div class="item items3">Item 3</div>
+    <div class="item items4">Item 4</div>
+    <div class="item items5">Item 5</div>
+    <div class="item items6">Item 6</div>
+    <div class="item items7">Item 7</div>
+    <div class="item items8">Item 8</div>
+    <div class="item items9">Item 9</div>
+    <div class="item items10">Item 10</div>
+    <div class="item items11">Item 11</div>
+    <div class="item items12">Item 12</div>
+  </div>
+
+</body>
+</html>

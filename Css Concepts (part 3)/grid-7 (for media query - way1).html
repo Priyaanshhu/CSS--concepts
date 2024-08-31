@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid-7 - media query (Way1)</title>
+  <style>
+  /* We can use Grid for media query in two ways */
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  /* Way - 1 */
+    body {
+      background: #444;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 64px 1fr 64px;
+      height: 100vh;
+      gap: 1rem;
+    }
+
+    /* '> *' (direct element inside body) */
+   body > * {
+      padding: 1rem;
+      border: 2px solid #bbb;
+    }
+    
+    header, footer {
+      grid-column: 1/-1;
+    }
+    
+    @media(max-width: 768px) {
+      body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 64px 1fr 1fr 64px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>header</header>
+  <main>main</main>
+  <aside>aside</aside>
+  <footer>footer</footer>
+
+</body>
+</html>

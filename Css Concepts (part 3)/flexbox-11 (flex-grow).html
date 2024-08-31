@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox-11 (flex-grow)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 3px solid #000;
+      display: flex;
+      max-width: 1200px;
+    }
+
+    .box {
+      border: 1px solid #000;
+      flex-basis: 250px;
+    }
+
+    .box1 {
+      background-color: lightpink;
+      
+    /* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. */
+    /* Note: If the element is not a flexible item, the flex-grow property has no effect. */
+      flex-grow: 1;
+    }
+
+    .box2 {
+      background-color: lightsteelblue;
+      flex-grow: 10;
+    }
+
+    .box3 {
+      background-color: lightseagreen;
+      flex-grow: 1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box box1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+    <div class="box box2">
+      <h1>Box 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+    <div class="box box3">
+      <h1>Box 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, aut!</p>
+    </div>
+  </div>
+
+</body>
+</html>

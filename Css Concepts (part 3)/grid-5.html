@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid-5</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      height: 500px;
+      max-width: 1440px;
+      border: 1px solid #000;
+      margin: 100px 20px;
+      display: grid;
+      grid-auto-rows: 100px;
+      grid-template-columns: repeat(auto-fit, 200px);
+      gap: 10px;
+      
+      /* "justify-items" will place the items in x-axis(horizontal )in given value like: left/right/center */
+      justify-items: center; 
+      
+      /* "align-items" will place the items in y-axis(vertical )in given value like: start/end/center */
+      /* shorthand property for this: 
+      place-items: end center; (place-items: y-axis x-axis)
+      */
+      align-items: start; 
+    }
+
+    .item {
+      background: lightcoral;
+      color: #fff;
+      padding: 10px;
+      border: 2px solid #000;
+    }
+    
+  </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="item items1">Item 1</div>
+      <div class="item items2">Item 2</div>
+      <div class="item items3">Item 3</div>
+      <div class="item items4">Item 4</div>
+      <div class="item items5">Item 5</div>
+      <div class="item items6">Item 6</div>
+      <div class="item items7">Item 7</div>
+      <div class="item items8">Item 8</div>
+      <div class="item items9">Item 9</div>
+      <div class="item items10">Item 10</div>
+      <div class="item items11">Item 11</div>
+      <div class="item items12">Item 12</div>
+    </div>
+
+</body>
+</html>

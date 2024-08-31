@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox-3 (flex-wrap)</title>
+  <style>
+  /* 
+  There are axis in flexbox:
+  1)Main axis
+  2)Cross axis
+  Definition: When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it.
+  */
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      border: 4px solid black;
+      display: flex;
+      height: 400px;
+      
+      /* "flex-wrap" will wrap the boxs on cross axis or main axis */
+      flex-wrap: wrap;
+      
+      /* "flex-direction" will give direction to boxes */
+      flex-direction: row;
+    }
+    
+    .box {
+      border: 1px solid #000;
+      width: 400px;
+    }
+
+    .box1 {
+      background-color: lightblue;
+    }
+
+    .box2 {
+      background-color: lightgray;
+    }
+
+    .box3 {
+      background-color: lightpink;
+    }
+    
+    .box4 {
+      background-color: lightseagreen;
+    }
+    
+    .box5 {
+      background-color: lightskyblue;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box box1">
+      <h1>Box 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+
+    <div class="box box2">
+      <h1>Box 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+
+    <div class="box box3">
+      <h1>Box 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+    
+    <div class="box box4">
+      <h1>Box 4</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+    
+    <div class="box box5">
+      <h1>Box 5</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quae harum, ad repudiandae hic atque eum enim maiores debitis.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

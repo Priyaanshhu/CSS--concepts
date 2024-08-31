@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid-6</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      max-width: 1440px;
+      height: 600px;
+      border: 1px solid #000;
+      margin: 100px 20px;
+      display: grid;
+      grid-auto-rows: 100px;
+      grid-template-columns: repeat(auto-fit, 200px);
+      gap: 10px;
+      
+      /* "justify-content" will place content left/right/center/space-between/space-around etc. */
+      justify-content: center;
+      
+      /* "justify-content" will place content start/end/center/space-between/space-around etc. */
+      align-content: end;
+      /* shorthand property for both:
+      place-content: end center; (place-content: align-content justify-content;)
+      */
+    }
+
+    .item {
+      background: lightcoral;
+      color: #fff;
+      padding: 10px;
+      border: 2px solid #000;
+    }
+    
+      /* "align-self" and "justify-self" place a item itself to x and y axis */
+      /* shorthand property for this:
+      place-self: start end; (place-self: align-self justify-self;)
+      */
+    .items1 {
+      align-self: start;
+      justify-self: end;
+    }
+    
+  </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="item items1">Item 1</div>
+      <div class="item items2">Item 2</div>
+      <div class="item items3">Item 3</div>
+      <div class="item items4">Item 4</div>
+      <div class="item items5">Item 5</div>
+      <div class="item items6">Item 6</div>
+      <div class="item items7">Item 7</div>
+      <div class="item items8">Item 8</div>
+      <div class="item items9">Item 9</div>
+      <div class="item items10">Item 10</div>
+      <div class="item items11">Item 11</div>
+      <div class="item items12">Item 12</div>
+    </div>
+
+</body>
+</html>

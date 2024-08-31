@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox-4 (justify-content)</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+    }
+    
+    .container {
+      border: 3px solid #000;
+      display: flex;
+      
+      /* "justify-content" will place the item start/end/center and other in main axis */
+      justify-content: center;
+    }
+    
+    .box {
+      border: 1px solid #000;
+      width: 200px;
+    }
+    
+    .box1 {
+      background-color: lightpink;
+    }
+    
+    .box2 {
+      background-color: lightslategrey;
+    }
+    
+    .box3 {
+      background-color: lightseagreen;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="box box1">
+      <h1>box 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ullam.</p>
+    </div>
+    
+    <div class="box box2">
+      <h1>box 2</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, necessitatibus.</p>
+    </div>
+    
+    <div class="box box3">
+      <h1>box 3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, alias.</p>
+    </div>
+  </div>
+
+</body>
+</html>
