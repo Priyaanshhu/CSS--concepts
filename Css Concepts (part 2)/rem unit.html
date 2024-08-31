@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Root-em(rem) unit</title>
+  <style>
+    html {
+      /* Default browser size is 16px, then 16px is 100% for browser so 62.5% is 10px for the browser(html), 62.5% will make it more responsive for browser */
+    font-size: 62.5%;
+    }
+    
+    .box1 {
+      /* rem unit will be multiply by his parent(html) font size, so html(parent) font-size is 10px*2rem = 20px */
+      font-size: 2rem;
+    }
+    
+    .text-content {
+      font-size: 3rem;
+      border: 5px solid darkcyan;
+      margin: 0.5rem;
+      padding: 2rem;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fugiat assumenda explicabo. Consequuntur ullam nostrum eligendi numquam atque, tempora ea!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+
+</body>
+</html>

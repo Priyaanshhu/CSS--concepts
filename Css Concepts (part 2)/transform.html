@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transform</title>
+  <style>
+  
+  /* The transform property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model. */
+  
+    /* The rotate() function defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it. */
+    .box1 {
+      height: 100px;
+      width: 100px;
+      font-size: 1.5rem;
+      background-color: lightskyblue;
+      margin: 100px auto;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .box1:hover {
+      transform: rotate(180deg);
+    }
+    
+    /* The scale() function defines a transformation that resizes an element on the 2D plane. Because the amount of scaling is defined by a vector [sx, sy], it can resize the horizontal and vertical dimensions at different scales */
+    .box2 {
+      height: 100px;
+      width: 100px;
+      font-size: 1.5rem;
+      background-color: lightsalmon;
+      margin: 100px auto;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .box2:hover {
+      transform: scale(3, 2);
+    }
+    
+    /* The translate property allows you to change the position of elements. The translate property defines x- and y-coordinates of an element in 2D */
+    .box3 {
+      height: 100px;
+      width: 100px;
+      font-size: 1.5rem;
+      background-color: lightseagreen;
+      margin: 100px auto;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .box3:hover {
+      transform: translate(100px, 50px);
+    }
+    
+    /* The skew() function defines a transformation that skew an element on the 2D plane, skew(x-angle,y-angle) */
+    .box4 {
+      height: 100px;
+      width: 100px;
+      font-size: 1.5rem;
+      background-color: lightcoral;
+      margin: 100px auto;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .box4:hover {
+      transform: skew(20deg, 50deg);
+    }
+    
+    /* The transform-origin property allows you to change the position of transformed elements. 2D transformations can change the x- and y-axis of an element */
+    .box5 {
+      height: 100px;
+      width: 200px;
+      font-size: 1.5rem;
+      background-color: lightskyblue;
+      margin: 100px auto;
+      transform-origin: top left;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .box5:hover {
+      transform: rotate(180deg);
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="box1">Rotate</div>
+  <div class="box2">Scale</div>
+  <div class="box3">Translate</div>
+  <div class="box4">Skew</div>
+  <div class="box5">Rotate -Transform-origin</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Absolute units</title>
+  <style>
+    /* Absolute units are fixed units eg: pixel(px), inch(in), centimetre(cm), point(pt) */
+    .p1 {
+      font-size: 30px;
+    }
+    
+    /* 1 inch = 96px */
+    .p2 {
+      font-size: 1in;
+    }
+    
+    /* 1 inch = 2.54cm */
+    .p3 {
+      font-size: 3cm;
+    }
+    
+    /* 1px = 0.75pt (points) */
+    .p4 {
+      font-size: 50pt;
+      border: 10pt solid #000;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Two types of Css units: 
+  1) Absolute units
+  2) Relative units :- Relative units are not fixed it change according his parent size eg: percentage(%), root-em(rem), em
+  -->
+  
+  <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, maiores!</p>
+  <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, maiores!</p>
+  <p class="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, maiores!</p>
+  <p class="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, maiores!</p>
+
+</body>
+</html>

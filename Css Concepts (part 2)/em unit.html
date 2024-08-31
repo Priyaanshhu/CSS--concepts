@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>em unit</title>
+  <style>
+    h1 {
+      font-size: 2em;
+      
+      /* em will take font-size of this parent element as a default size and work according to parent font-size, so
+      html:h1 = 2em(32px)*2em = 64px
+      .box1:h1 = 20px*2em = 80px */
+      border: 2em solid darkcyan;
+      padding: 3em;
+    }
+    
+    .box1 {
+      font-size: 20px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>This is main heading</h1>
+  <div class="box1">
+    <h1>This is h1 inside box1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ullam quas eos fuga tempore adipisci voluptates, quisquam quam, provident velit temporibus. Laudantium necessitatibus laboriosam minus quae officiis. Nobis exercitationem consectetur accusantium quod fugit quo qui, repellendus vero voluptatem a aut obcaecati laborum nemo numquam nostrum eveniet ut quae vitae nesciunt, odit saepe fuga quibusdam praesentium? Illum vero adipisci minima laborum atque dolores nobis repellendus assumenda, velit distinctio, ducimus porro, fugiat commodi inventore aspernatur necessitatibus asperiores et rem odio reiciendis sapiente dicta eaque aliquid provident? Aliquid dolorem in harum? Quo soluta nam nihil, voluptatum quia sint dolorum eos doloremque dignissimos aliquam.</p>
+  </div>
+
+</body>
+</html>

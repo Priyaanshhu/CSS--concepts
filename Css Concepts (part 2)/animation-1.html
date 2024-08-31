@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animation-1</title>
+  <style>
+    .box {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      
+      /* Give name to animation */
+      animation-name: change-bg-color;
+      
+      /* Set duration for animation*/
+      animation-duration: 5s;
+      
+      /* Set delay time (from when we have to start animation ) */
+      animation-delay: 3s;
+      
+      /* Set time for how many time we want to repeat the animation */
+      animation-iteration-count: 3;
+
+      /* "animation-fill-mode: forwards;" will stop the animation at last given value */
+      animation-fill-mode: forwards;
+    }
+    
+    /* "keyframes" is used to write properties to give animation from start to end */
+    @keyframes change-bg-color {
+      from {
+        background-color: black;
+      }
+      to {
+        background-color: lightseagreen;
+      }
+    }
+    
+    .line {
+      margin-top: 50px;
+      height: 10px;
+      width: 50px;
+      background-color: darkblue;
+      animation-name: line-width;
+      animation-duration: 5s;
+      animation-fill-mode:  forwards;
+      
+      /* "animation-direction" give direction to animation */
+      animation-direction: reverse ;
+    }
+    
+    @keyframes line-width {
+      from {
+        width: 0;
+      }
+      to {
+        width: 300px;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="line"></div>
+  
+</body>
+</html>

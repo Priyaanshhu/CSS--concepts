@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viewpoint units - vh, vw, vmax, vmin</title>
+  <style>
+    .box1 {
+      /* viewport maximum(vmax) will compare vh and vw of screen and which size is maximum it will give that size to content, it same goes to viewport minimum(vmin) it will compare and which size is minimum it will give that size to content */
+      height: 100vmax;
+      border: 5px solid blue;
+      background: lightpink;
+    }
+    
+    .box2 {
+      border: 5px solid red;
+      /* viewport width(vw) means it will take the width according to screen and it same goes to viewport height(vh) */
+      width: 70vw;
+      background: lightsalmon;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <h1>Heading</h1>
+  </div>
+  
+  <div class="box2">
+    <h1>Hello</h1>
+  </div>
+
+</body>
+</html>

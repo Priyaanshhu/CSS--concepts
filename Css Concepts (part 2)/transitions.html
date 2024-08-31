@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transition</title>
+  <style>
+  /* Transition means a particular thing change into other state eg. We change from child to adult */
+  /* So like this example in Css When a event(change) occur on a element while hover state or focus state for that transition is used */
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background: lightpink;
+      
+      /* Give the name of a property where you want to used value */
+      transition-property: background;
+      
+      /* Give time to apply transition (2s = 2Seconds) */
+      transition-duration: 2s;
+    }
+    
+    .box1:hover {
+      background: lightcoral;
+    }
+    
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background: lightslategray;
+      transition-property: background;
+      
+      /* 
+      ease-in = It start slowly,
+      ease-out = It end slowly,
+      ease-in-out = It start and end slowly
+      */
+      transition-timing-function: ease-in;
+    }
+
+    .box2:hover {
+      background: burlywood;
+    }
+    
+    .box3 {
+      width: 100px;
+      height: 100px;
+      background: lightseagreen;
+      
+      /* Shorthand for transition*/
+      /* We can also give transition property to other value by applying "," */
+      /* If you don't want to write all property name to give transition then use "all" in transition property place and it will apply values on all properties
+        eg :- transition: all 8s ease-in-out;
+      */
+      transition: background 5s ease-in-out, width 8s ease-in-out, height 8s ease-in-out;
+    }
+
+    .box3:hover {
+      background: green;
+      width: 300px;
+      height: 20px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+
+</body>
+</html>

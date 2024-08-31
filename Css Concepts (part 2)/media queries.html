@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media queries</title>
+  <style>
+    html {
+      font-size: 10px;
+    }
+    
+    body {
+      background-color: lightgray;
+    }
+    
+    h1 {
+      font-size: 10rem;
+    }
+    
+    p {
+      font-size: 5rem;
+    }
+    
+    /* Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment your site is running on. */
+    /* In media query we will set different properties according to screen size (viewport) */
+    /* Note: always write media queries in last */
+    @media (max-width: 500px) {
+      html {
+        font-size: 5px;
+      }
+      
+      body {
+        background-color: lightseagreen;
+      }
+    }
+    
+    @media (min-width: 501px) and (max-width: 769px) {
+      body {
+        border-right-color: lightsalmon;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>This is heading</h1>
+  <p>This is paragraph</p>
+
+</body>
+</html>
